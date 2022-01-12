@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <header>
+        <h1><span id="colored">Survey Form</span></h1>
+        <h2><span id="colored">Bright Arrow</span></h2>
+    </header>
+    <main>
+        <!-- Starting -->
+
+        <form action="" target="_blank" id="survey-form">
+            <div class="container">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" size="20" name="name" autofocus id="name" placeholder="Name" required>
+                <br>
+                <label for="email" id="email-label">Email: </label>
+                <input type="text" size="20" name="email" id="email" placeholder="***@gmail.com" required>
+                <br>
+                <label for="number" id="number-label">Age :&nbsp;&nbsp;&nbsp; </label>
+                <input type="number" size="10" name="number" id="number" placeholder="18-60" required max="60" min="18">
+
+
+            </div>
+            <br><label for="dropdown">Select your field: </label><br>
+            <input id="element-4" list="dropdown" size="30" placeholder="Select Field" required>
+            <datalist id="dropdown">
+                <option value="Front-end"></option>
+                <option value="Back-end"></option>
+                <option value="Full-stack"></option>
+                <option value="API's"></option>
+            </datalist>
+            <p>How would you like to work? Select one or more options</p>
+            <input type="radio" name="work" value="online" id="online">
+            <label for="online">Work Online</label>
+            <br>
+            <input type="radio" name="work" value="offline" id="offline">
+            <label for="offline">Work Offline</label>
+            <p>What are you strong skills among these:</p>
+            <input type="checkbox" name="typing" id="typing" value="typing">
+            <label for="typing">Typing speed</label>
+            <br><input type="checkbox" name="programming" id="Programming" value="Programming">
+            <label for="Programming">Programming skills</label>
+            <br><input type="checkbox" name="logic" id="logic" value="logic">
+            <label for="">Logic building</label>
+            <br><input type="checkbox" name="debugging" id="debugging">
+            <label for="debugging">debugging</label><br>
+            <br><input type="submit" value="submit"><br>
+        </form>
+
+        <!-- Ending -->
+    </main>
+</body>
+
+</html>
